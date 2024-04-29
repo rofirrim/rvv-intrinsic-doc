@@ -31,6 +31,7 @@ endif::[]
 :stem: latexmath
 :footnote:
 :xrefstyle: short
+:emit-appendices:
 
 [WARNING]
 .This document is in the link:http://riscv.org/spec-state[Development state]
@@ -52,6 +53,7 @@ Copyright 2023 by RISC-V International.
 include::rvv-intrinsic-spec.adoc[]
 
 [appendix]
+ifdef::emit-appendices[]
 == Explicit (Non-overloaded) intrinsics
 include::../auto-generated/intrinsic_funcs/00_vector_loads_and_stores_intrinsics.adoc[]
 include::../auto-generated/intrinsic_funcs/01_vector_loads_and_stores_segment_intrinsics.adoc[]
@@ -98,3 +100,4 @@ include::../auto-generated/policy_funcs/overloaded_intrinsic_funcs/05_vector_red
 include::../auto-generated/policy_funcs/overloaded_intrinsic_funcs/06_vector_mask_intrinsics.adoc[]
 include::../auto-generated/policy_funcs/overloaded_intrinsic_funcs/07_vector_permutation_intrinsics.adoc[]
 include::../auto-generated/policy_funcs/overloaded_intrinsic_funcs/08_miscellaneous_vector_utility_intrinsics.adoc[]
+endif::[]
